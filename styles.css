@@ -175,7 +175,8 @@ button {
 
 .gallery-image {
   width: 300px;
-  height: auto;
+  height: 485.4px;
+  object-fit: cover;
 }
 
 .image-caption {
@@ -242,4 +243,62 @@ footer p, .copyright, .credits {
   font-weight: 300;
   color: #dbdbdb;
 
+}
+
+
+/* About page */
+
+.artist-profile {
+  max-width: none;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  background-color: #111;
+  color: #fff;
+}
+
+.artist-description {
+  width: 50%;
+  padding: 20px;
+}
+
+.description-text {
+  font-size: 18px;
+  line-height: 1.5;
+  letter-spacing: 0.2px;
+  text-align: justify;
+  margin: 0;
+}
+
+
+
+@media (max-width: 991px) {
+  .artist-profile {
+    max-width: 991px;
+    flex-direction: column;
+  }
+
+  .artist-description {
+    width: 100%;
+    padding: 10px;
+  }
+
+}
+
+@media (max-width: 640px) {
+  .artist-profile {
+    max-width: 640px;
+  }
+
+  .artist-description {
+    padding: 5px;
+  }
+
+  .description-text {
+    font-size: 14px;
+  }
 }
