@@ -302,3 +302,119 @@ footer p, .copyright, .credits {
     font-size: 14px;
   }
 }
+
+
+/* Contact Page */
+
+  
+.name-text {
+  color: #fff;
+  font-size: 72px;
+  font-weight: 500;
+  line-height: 68px;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+}
+
+
+/* Social links section */
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.social-link-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+  text-decoration: none;
+  transition: opacity 0.3s ease;
+}
+
+.social-link:hover,
+.social-link:focus {
+  opacity: 0.8;
+  
+
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.social-username {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: 0.2px;
+  
+}
+
+/* Tablet styles */
+@media (max-width: 991px) {
+
+
+  .name-text {
+      font-size: 60px;
+      line-height: 70px;
+  }
+
+  .social-links {
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100%;
+  }
+
+  .social-link {
+      gap: 20px;
+  }
+
+  .social-username {
+      font-size: 35px;
+      line-height: 42px;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 640px) {
+
+
+  .name-text {
+      font-size: 50px;
+      line-height: 60px;
+  }
+
+  .social-links {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .social-link {
+      gap: 15px;
+  }
+
+  .social-username {
+      font-size: 30px;
+      line-height: 36px;
+  }
+}
+
+/* Accessibility enhancements */
+.social-link:focus {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .social-link {
+      transition: none;
+  }
